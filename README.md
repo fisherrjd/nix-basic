@@ -1,19 +1,20 @@
-# examples
+# Usage
+This directory contains a basic cfg.nix to begin learning nix
 
-This directory contains examples of use of my repo as a source for other tools/environments!
+## How to do the NIX tings
 
-## How to use `cfg.nix`
+### 1. Install Nix
 
-Drop a file like this in your home directory (`~/cfg.nix`) and run `nix-env -i -f ~/cfg.nix` to use this file to manage your globally installed nix packages!
+| Platform | One-liner |
+|---|---|
+| **macOS** | `sh <(curl -L https://nixos.org/nix/install)` |
+| **WSL (Windows Subsystem for Linux)** | `sh <(curl -L https://nixos.org/nix/install) --no-daemon` |
+| **Linux (any distro)** | Same as WSL |
 
-Tracing nixos unstable upstream
+After installation, open a **new shell** or run `exec $SHELL` so Nix binaries are on `$PATH`.
 
-```
+### 2. Create your `cfg.nix`
 
----
-
-## In this directory
-
-### [cfg.nix](./cfg.nix)
-
-This file contains an example of a `cfg.nix` file for configuring a global environment on a non-nixOS system. Use this as sort of a lightweight alternative to `home-manager`.
+```bash
+cp examples/cfg.nix ~/cfg.nix
+$EDITOR ~/cfg.nix      # adjust packages to taste
