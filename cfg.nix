@@ -23,6 +23,7 @@ let
       just
       moreutils
       nodePackages.prettier
+      redis
       scc
       vscode
       yq-go
@@ -33,18 +34,17 @@ let
     k8s = [
       kubectl
       kubectx
+      k9s
     ];
     nix = [
       nix-direnv
       nixpkgs-fmt
       # nixup
     ];
-    python = [
-      ruff
-      (python311.withPackages (p: with p; [
-        black
-        httpx
-      ]))
+    java = [
+      maven
+      zulu       #java 21
+      zulu11     #java 11
     ];
     scripts = pkgs.lib.attrsets.attrValues scripts;
   };
