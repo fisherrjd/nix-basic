@@ -12,15 +12,12 @@ let
     cli = [
       bashInteractive
       coreutils
-      cowsay
       curl
       delta
       direnv
-      figlet
       git
       gron
       jq
-      just
       moreutils
       nodePackages.prettier
       redis
