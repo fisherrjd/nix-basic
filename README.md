@@ -16,6 +16,5 @@ After installation, open a **new shell** or run `exec $SHELL` so Nix binaries ar
 ### 2. Create your `cfg.nix`
 
 ```bash
-git clone git@github.com:fisherrjd/nix-basic.git ~/cfg
-cp cfg/cfg.nix ~/cfg.nix
+wget https://raw.githubusercontent.com/fisherrjd/nix-basic/refs/heads/main/cfg.nix
 nix-env -i -f ~/cfg.nix
