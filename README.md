@@ -16,5 +16,5 @@ After installation, open a **new shell** or run `exec $SHELL` so Nix binaries ar
 ### 2. Create your `cfg.nix`
 
 ```bash
-cp examples/cfg.nix ~/cfg.nix
-$EDITOR ~/cfg.nix      # adjust packages to taste
+cp nix-basic/cfg.nix ~/cfg.nix
+nix-env -i -f ~/cfg.nix
