@@ -1,8 +1,8 @@
 { pkgs ? import
     (fetchTarball {
-      name = "jpetrucciani-2025-01-22";
-      url = "https://github.com/jpetrucciani/nix/archive/823936a22b0f0e545b1fa8e88f24343967f18330.tar.gz";
-      sha256 = "0d01ipxvgyyr0akyfr6phl080sg5rnsw2bwbffcxrng2yna4z8ap";
+      name = "unstable-2025-07-18";
+      url = "https://github.com/NixOS/nixpkgs/archive/fa0ef8a6bb1651aa26c939aeb51b5f499e86b0ec.tar.gz";
+      sha256 = "1xq0h56vmclmajjvciyrzg2d8g43vjra2b0kzfpcjvngvm57vanq";
     })
     { }
 }:
@@ -24,6 +24,7 @@ let
       moreutils
       nodePackages.prettier
       scc
+      vscode
       yq-go
       (writeShellScriptBin "hms" ''
         nix-env -i -f ~/cfg.nix
