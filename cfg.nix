@@ -37,7 +37,7 @@ let
     nix = [
       nix-direnv
       nixpkgs-fmt
-      nixup
+      # nixup
     ];
     python = [
       ruff
