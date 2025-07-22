@@ -29,3 +29,10 @@ wget https://raw.githubusercontent.com/fisherrjd/nix-basic/refs/heads/main/cfg.n
 # Install everything listed inside
 nix-env -i -f ~/cfg.nix
 ```
+
+# Advanced Usage
+https://github.com/jpetrucciani/nix
+<br>https://github.com/kwbauson/cfg
+<br>https://github.com/benaduggan/nix
+<br>https://github.com/fisherrjd/nix
+
