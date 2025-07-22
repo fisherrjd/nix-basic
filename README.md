@@ -18,3 +18,9 @@ After installation, open a **new shell** or run `exec $SHELL` so Nix binaries ar
 ```bash
 wget https://raw.githubusercontent.com/fisherrjd/nix-basic/refs/heads/main/cfg.nix
 nix-env -i -f ~/cfg.nix
+```
+
+## Further Learning
+https://nixos.org/learn/
+
+https://nix.dev/tutorials/
