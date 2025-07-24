@@ -21,7 +21,9 @@ After the installer finishes, open a **new terminal** or run
 
 ## 2. Create & apply your package set
 ```bash
+#add wget to your env temporarily to install our config
 nix-shell -p wget
+
 # Grab the sample file
 wget https://raw.githubusercontent.com/fisherrjd/nix-basic/refs/heads/main/cfg.nix
 
