@@ -13,10 +13,7 @@ This repo contains a minimal `cfg.nix` that behaves like a `Brewfile`; edit it t
 <br>For finding new packages / settings refer to https://search.nixos.org/packages
 
 ## 1. Install Nix
-| Platform | One-liner |
-|---|---|
-| **macOS** | `sh <(curl -L https://nixos.org/nix/install)` |
-| **Linux** (or WSL) | `sh <(curl -L https://nixos.org/nix/install) --no-daemon` |
+```curl -fsSL https://install.determinate.systems/nix | sh -s -- install --determinate```
 
 After the installer finishes, open a **new terminal** or run  
 `exec $SHELL` to refresh your `$PATH`.
