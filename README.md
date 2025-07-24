@@ -28,6 +28,10 @@ wget https://raw.githubusercontent.com/fisherrjd/nix-basic/refs/heads/main/cfg.n
 
 # Install everything listed inside
 nix-env -i -f ~/cfg.nix
+
+
+# Post install refresh
+hms
 ```
 
 # Advanced Usage
