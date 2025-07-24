@@ -14,7 +14,7 @@ This repo contains a minimal `cfg.nix` that behaves like a `Brewfile`; edit it t
 
 ## 1. Install Nix
 ```curl -fsSL https://install.determinate.systems/nix | sh -s -- install```
-Select No and install from NixOS
+<br>Select No and install from NixOS
 
 After the installer finishes, open a **new terminal** or run  
 `exec $SHELL` to refresh your `$PATH`.
