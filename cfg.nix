@@ -4,7 +4,7 @@
       url = "https://github.com/NixOS/nixpkgs/archive/fa0ef8a6bb1651aa26c939aeb51b5f499e86b0ec.tar.gz";
       sha256 = "1xq0h56vmclmajjvciyrzg2d8g43vjra2b0kzfpcjvngvm57vanq";
     })
-    { }
+    { config.allowUnfree = true; }
 }:
 let
   name = "cfg";
@@ -40,8 +40,8 @@ let
     ];
     java = [
       maven
-      zulu       #java 21
-      zulu11     #java 11
+      zulu #java 21
+      zulu11 #java 11
     ];
     scripts = pkgs.lib.attrsets.attrValues scripts;
   };
