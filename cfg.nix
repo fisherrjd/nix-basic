@@ -41,7 +41,6 @@ let
     java = [
       maven
       zulu #java 21
-      zulu11 #java 11
     ];
     scripts = pkgs.lib.attrsets.attrValues scripts;
   };
